@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+pydantic
+streamlit
+google-generativeai
+python-dotenv
+sqlalchemy
+psycopg2-binary
+numpy
+pandas
+openpyxl
+scikit-learn
+sentence-transformers
