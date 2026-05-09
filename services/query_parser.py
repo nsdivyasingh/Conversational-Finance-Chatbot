@@ -319,7 +319,7 @@ def semantic_parse_query(query: str) -> dict[str, Any] | None:
     Uses Gemini to perform semantic analysis of the payroll query.
     Returns a dict with intent, confidence, rewritten_query, and entities.
     """
-    api_key = os.getenv("GEMINI_API_KEY") or "AIzaSyBXvpNdQiwkE8_Zs0a6Py6ctGXI2eQXtcw"
+    api_key = os.getenv("GEMINI_API_KEY")
     if not api_key:
         print("DEBUG: No GEMINI_API_KEY found for semantic parse.")
         return None
@@ -390,4 +390,4 @@ def semantic_parse_query(query: str) -> dict[str, Any] | None:
     except Exception as e:
         print(f"DEBUG: semantic_parse_query error: {e}")
         return None
-
+
